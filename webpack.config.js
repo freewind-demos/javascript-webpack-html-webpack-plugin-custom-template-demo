@@ -6,5 +6,10 @@ module.exports = {
         path: __dirname,
         filename: 'bundle.js'
     },
-    plugins: [new HtmlWebpackPlugin()]
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: 'template.html',
+            inject:false
+        })
+    ]
 }
